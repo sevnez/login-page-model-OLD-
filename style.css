@@ -1,0 +1,150 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: #dde1e7;
+    user-select: none;
+    min-height: 100vh;    
+}
+.center, .content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.content{
+    width: 330px;
+    min-height: 100px;
+    background-color: #dde1e7;
+    box-shadow: -4px -4px 7px #fffdfdb7,
+                3px 3px 5px rgba(94, 104, 121, 0.28);
+    padding: 30px 35px 40px;
+    height: auto;
+    opacity: 0;
+    visibility: hidden;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+.text{
+    font-size: 30px;
+    color: black;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 2px;
+}
+.form{
+    margin-top: 40px;
+}
+.field{
+    margin-top: 20px;
+    display: flex;
+}
+.field .fas{
+    height: 50px;
+    width: 60px;
+    color:#868686;
+    font-size: 20px;
+    line-height: 50px;
+    border: none;
+    text-align: center;
+    border-right: none;
+    background: #dde1e7;
+    box-shadow: inset 2px 2px 5px #babecc,
+                inset -5px -5px 10px #ffffff73;
+}
+.field input,button{
+    height: 50px;
+    width: 100%;
+    outline: none;
+    font-size: 19px;
+    color: #868686;
+    padding: 0 15px;
+    background: #dde1e7;
+    border: none;
+    box-shadow: inset 2px 2px 5px #babecc,
+                inset -5px -5px 10px #ffffff73;
+}
+/* .field button{
+    height: 50px;
+    width: 100%;
+    outline: none;
+    font-size: 19px;
+    color: #868686;
+    padding: 0 15px;
+    background: #dde1e7;
+    border: none;
+    box-shadow: inset 2px 2px 5px #babecc,
+                inset -5px -5px 10px #ffffff73;
+} */
+
+button{
+    color: #363637;
+    margin-top: 40px;
+    border-radius: 5px !important;
+    font-weight: 600;
+    box-shadow: -4px -4px 7px #fffdfdb7,
+                3px 3px 5px rgba(94, 104, 121, 0.28);
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+
+/* button hover */
+button:hover{
+    color:#339933;
+    box-shadow: inset 2px 2px 5px #babecc,
+                inset -5px -5px 10px #ffffff73;
+}
+.link{
+    margin-top: 35px;
+    color: #000000;
+    text-align: center;
+}
+.link a{
+    color:#08adef;
+    text-decoration: none;
+}
+.link a:hover{
+    text-decoration: underline;
+}
+/* clivk me popup login page */
+.click-me{
+    display: block;
+    width: 160px;
+    height: 50px;
+    background-color: #dde1e7;
+    box-shadow: -4px -4px 7px #fffdfdb7,
+                3px 3px 5px rgba(94, 104, 121, 0.28);
+    cursor: pointer;
+    line-height: 50px;
+    font-size: 22px;
+    text-align: center;
+}
+
+.click-me:hover{
+    color: #08adef;
+    box-shadow: inset 2px 2px 5px #babecc,
+                inset -5px -5px 10px #ffffff73;
+}
+#click{
+    display: none;
+}
+/* active popup button */
+#click:checked~ .content{
+    opacity: 1;
+    visibility: visible;
+}
+#cancel{
+    position: absolute;
+    right: 10px;
+    font-size: 25px;
+    background: #dde1e7;
+    padding: 3px;
+    padding-left: 11px;
+    padding-right: 11px;
+    border-radius: 50%;
+    box-shadow:-4px -4px 7px #fffdfdb7,
+                3px 3px 5px rgba(94, 104, 121, 0.28);
+    top: 20px;
+    cursor: pointer;
+}
+/* successfully complete #projectsuccess1 */
